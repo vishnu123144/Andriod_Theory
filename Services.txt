@@ -1,0 +1,111 @@
+Android Services
+=================
+
+What is a Service?
+Most confusion about the Service class actually revolves around what it is not:
+
+A Service is not a separate process.
+ The Service object itself does not imply it is running in its own process;
+ unless otherwise specified, 
+it runs in the same process as the application it is part of.
+A Service is not a thread. 
+It is not a means itself to do work off of the main thread 
+(to avoid Application Not Responding errors).
+
+
+
+An Android Service, is an application component that can
+ perform long-running operations in the background,
+ and it doesn’t provide a user interface.
+
+A few example uses for a service could be:
+
+Network transactions
+Play music
+Perform file I/O operations
+Interact with content providers
+Background operations
+
+
+
+Types of Android Services
+--------------------------
+1. Foreground Services:
+
+Services that notify the user about its ongoing operations are termed as Foreground Services. 
+Users can interact with the service by the notifications provided about the ongoing task.
+ Such as in downloading a file, 
+the user can keep track of the progress in downloading and can also pause and resume the process.
+
+2. Background Services:
+
+Background services do not require any user intervention. 
+These services do not notify the user about ongoing background tasks and users also cannot access them.
+ The process like schedule syncing of data or storing of data fall under this service.
+
+3. Bound Services:
+
+This type of android service allows the components of the application like activity to bound themselves with it.
+ Bound services perform their task as long as any application component is bound to it.
+ More than one component is allowed to bind themselves with a service at a time.
+ In order to bind an application component with a service bindService() method is used. 
+
+
+
+Service lifecycle
+------------------
+ 
+To implement a service, it need to overwrite the lifecycle callbacks. 
+Serices are more readily subject to stop forced by os, 
+they may require attention in service clients.
+
+oncreate()
+onStartCommand()
+onBind()
+onUnbind()
+onRebind() 
+onDestroy()
+
+
+
+Fundamentals of Android Services
+---------------------------------
+onStartCommand()
+----------------
+**The Android service calls this method when a component(eg: activity) 
+requests to start a service using startService(). Once the service is started,
+it can be stopped explicitly using stopService() or stopSelf() methods.
+
+onBind()
+---------
+**This method is mandatory to implement in android service and is invoked 
+whenever an application component calls the bindService() method in order to
+bind itself with a service. User-interface is also provided to communicate 
+with the service effectively by returning an IBinder object.
+
+**If the binding of service is not required then the method must return null.
+
+onUnbind()
+----------
+The Android system invokes this method when all the clients 
+get disconnected from a particular service interface.
+
+onRebind()
+-----------
+Once all clients are disconnected from the particular interface of service and
+there is a need to connect the service with new clients, the system calls this method.
+
+onCreate()
+-----------
+Whenever a service is created either using onStartCommand() or onBind(),
+the android system calls this method. This method is necessary to perform 
+a one-time-set-up.
+
+onDestroy()
+------------
+When a service is no longer in use, the system invokes this method
+ just before the service destroys as a final clean up call. Services must
+ implement this method in order to clean up resources like registered listeners,
+ threads, receivers, etc.
+
+

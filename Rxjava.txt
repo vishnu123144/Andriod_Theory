@@ -1,0 +1,122 @@
+RX java in android:
+
+two types of thread in android:
+
+  1. Main thread  -is a thread fully responsible for ui
+    changing the thread,setting images.
+
+  2. background thread: it is running in background
+
+
+Threading in android:
+
+                    process
+    
+     mainthread             background thread2
+        background thread1       background thread n
+            background thread3
+
+  In a single process we have only one mainthread 
+and several background threads.
+
+class MainActivity : AppCompatActivity() {
+
+    Main thread
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val user=fetchUser()  -->  background thread
+        showUser(user)        -->
+
+      titleView.text="mindworks"
+      subtitleview.text="android"
+
+RxJava:(Reactive extensions)
+
+-->Reactive Extensions is a library for composing asynchronous and
+ event-based programs by using observable sequences
+
+
+asynchronous:
+    different parts of programs run at a time.
+
+event-based:
+ the program executes code based on event generated
+
+observable sequences:
+ 
+
+major components in Rxjava:
+
+
+       observable --> speaker  -->instances of observable class they emit data
+          
+
+       operator-->translator -->control datastreams. -->
+          Map,flatmap,from,just,range
+
+        observer --> listener --> instances of observer interface they consume
+ data emited by observable
+
+                           scheudeler-->to handle multithreading  --decides the thread
+       
+                             subscribe
+  action is done by observable          <--observable     <-------     observer          }-->result odf action is observed by observer.
+
+                                       onNext()           }     subscription-->connection between observer and observable.
+                                       oncompleted()         observer shouid be subscribed by observer
+
+                                        onError()         }
+
+
+                 disposable-->
+                 compositeDisposable-->to avoid memory leaks
+
+
+Schedulers in RxJava:
+
+   to handle multithreading in RxJava we can use schedulers.
+
+  A scheduler can be identified as a thread pool managing one or more threads.
+
+ Types of schedulers:
+
+   Schedulers.io:
+    for tasks related to databese.
+   network communications and file system interactions.
+
+ AndroidSchedulers.mainThread():
+
+   this is where user interactions happen.
+   this is main thread/ui thread
+   provided to rxjava from rxandroid.
+
+Schedulers.newThread(): -- this scheduler creates a new thread for each
+   unit of work scheduled.
+
+Scheduler.single():--this scheduler has a single thread executing tasks
+   one after another following the given order.
+
+Scheduler.trampoline:-- this scheduler executes tasks
+ following first in first out basics.
+
+Scheduler.from(Executor executor):-- this creates a custom scheduler
+backed by a specific executor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+

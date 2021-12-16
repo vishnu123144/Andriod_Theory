@@ -1,0 +1,24 @@
+jetpack components:
+
+Architecture components:
+
+Lifecycle-aware components:
+
+LifecycleOwner & LifecycleObserver:
+
+                     
+       
+                    (LifeCycle Owner)
+    MainActivity -->LIFECYCLE is class which is enumerated with two states:
+       
+
+      Event          State
+     
+     Oncreate       created
+     onResume       resumed
+     onPause        paused
+     onStop         stopped
+     onDestroy      destroyed
+
+     Activity ------->LifeCycleObserver -->
+            observes the activity and keep track of lifecycle --performed actions

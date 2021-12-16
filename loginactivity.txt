@@ -1,0 +1,284 @@
+login-layout
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp" >
+
+    <LinearLayout
+        android:id="@+id/usernamelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:text="Username"
+            android:textSize="@dimen/button_text_size" />
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/hint_message" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/usernamelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:text="Password"
+            android:textSize="@dimen/button_text_size" />
+
+        <EditText
+            android:id="@+id/ed_password1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/hint_message1"
+            android:inputType="numberPassword" />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
+
+
+-------------------------------------------------------------------
+
+scrollbar-layout
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:id="@+id/usernamelayout1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1">
+
+            </TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_username"
+                android:hint="Enter Username"
+                android:layout_weight="2"
+                ></EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/usernamelayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="Email"
+                android:textSize="@dimen/button_text_size" />
+
+            <EditText
+                android:id="@+id/ed_username2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Enter Email" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/usernamelayout1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1">
+
+            </TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_username1"
+                android:hint="Enter Password"
+                android:layout_weight="2"
+                android:inputType="numberPassword"
+                ></EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_below="@id/usernamelayout1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1">
+
+            </TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_username3"
+                android:hint="Confirm Password"
+                android:layout_weight="2"
+                android:inputType="numberPassword"
+                ></EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:layout_below="@id/usernamelayout1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1">
+
+            </TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_username4"
+                android:hint="Enter MobileNumber"
+                android:layout_weight="2"
+                android:inputType="numberPassword"
+                ></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:layout_below="@id/usernamelayout1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1">
+
+            </TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_username5"
+                android:hint="Enter MobileNumber"
+                android:layout_weight="2"
+                android:inputType="numberPassword"
+                ></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:layout_below="@id/usernamelayout1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1">
+
+            </TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_username8"
+                android:hint="Enter MobileNumber"
+                android:layout_weight="2"
+                android:inputType="numberPassword"
+                ></EditText>
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_marginTop="580dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="signup"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/usernamelayout1"
+            />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

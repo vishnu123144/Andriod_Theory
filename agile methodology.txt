@@ -1,0 +1,99 @@
+
+///Eureka Server holds information about all client-service applications.​
+eureka server: eureka server is used for registering microservices
+The Eureka server is nothing but a service discovery pattern 
+implementation,
+api gateway: api gateway is used for dynamic routing
+
+CI service is a part of GitLab that build and test the software 
+whenever developer pushes the  code  to application :
+CI allows the project team members to integrate their work daily
+ ,so that the integration errors can be identified 
+easily by an automated build.///
+
+
+We adopted agile methodology to work on our product development.​
+
+We worked on our product in two sprints.​
+
+In the first sprint we made the architecture, mock uis and made the
+ backend services.​
+
+And in the second sprint we made UI of our product.​
+
+​
+
+
+agile is an incremental and iterative approach to management.
+agile is used for continuos collaboration of product.
+
+A great benefit you can get from iterative work is less work wasted.
+
+
+
+
+for implementing agile we are using scrum
+
+scrum:
+
+iterative over the developments and development one at a time.
+
+scrum is a iteration of plan, build,test and review.
+
+product owner:
+is the guy with ideas and owner of the application he might not be a technical holds the responsibility 
+to make sure 
+that application is deployed
+application is built exactly as the way it has to be built 
+
+
+product backlog:
+in a traditonal environment it has been planned for months and you are working and deploying 
+depending upon the size of the product
+
+in product backlog the small application iterated over smaller tasks
+first iteration we will have plan ,build, test,and review 
+in this case i am not building the whole application 
+
+scrum master and product owner will come up with the product backlogs
+scrum master and product owner will give user stories 
+
+sprint meeting:
+
+sprint planning is nothing but meeting and discussions you have
+During the sprint planning meeting, the team selects some number of product
+ backlog items, usually in the form of user stories,
+ and identifies the tasks necessary to complete each user story.
+ Most teams also estimate how many hours each task will take someone on the
+ team to complete.
+
+//scrum master:
+scrum master is some one project manager or team manager who held the meetings daily
+ or handling the tasks//
+
+
+daily scrum:
+daily scrum is nothing more thanyou know the 15 minute meeting that
+ happened every day 
+which has been assigned role you
+ have what happened and where you stand if you need 
+any help there 
+what you plan today 
+
+7) Sprint Retrospective
+There has to be a clear next step after every step if you want Agile project management to work.
+ This can be determined via a sprint retrospective. 
+After completing a sprint and showing off all features,
+ it’s now time to figure out what gets done next.
+
+sprint review:
+sprint review will occurs at the end of user stories 
+or the backlog you working on each and 
+every one of the user stories with timeline odf two weeks in
+ mind at the end of two weeks
+once the sprint is completed we have a sprint review demo the code 
+you have or some kind of
+verification that you actually completed
+
+
+

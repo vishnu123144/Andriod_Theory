@@ -1,0 +1,105 @@
+
+
+Object oriented concepts:
+
+   Car has engine:
+     Car is dependent on engine
+
+   Class Car
+  {
+    Engine engine: change settings of car -->tightly coupled between two classes.
+   
+  }
+
+spring framework:java.jar ->springcore.jar,beans.jar,context.jar
+
+-->focus on application business logic
+
+Design Pattern: Dependency Injection -> implements ioc container
+                Remove the dependency between the classes -->loosely coupled
+
+Ioc: (Inversion of control) --> Create the Bean/configure /Manage the lifecycle of beans
+
+-->beans are nothing but objects
+
+Injects ->when ever the my application needs any objects it will takes from
+       Ioc container and inject into our application.
+
+when ever we create th new ApplicationContext container will be activated and  it wil load the 
+configuration from the spring.xml and it will generate the beans(objects) -->Ioc container.
+
+
+Types of Dependency Injection:
+
+1.Setter Injection
+
+  pass the dependencies via property setter methods.
+
+2.Construcor Injection:
+
+   pass dependencies via constructor.
+
+
+dependencis:
+
+spring core dependency:
+
+ <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+   <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.3.6</version>
+     </dependency>
+
+spring context dependency:
+     
+     <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+   <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.3.6</version>
+     </dependency>
+
+
+spring bean dependency:
+
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-beans</artifactId>
+    <version>5.0.3.RELEASE</version>
+</dependency>
+     
+Bean Scope:
+
+1.singleton
+2.prototype
+3.request
+4.session
+5.global session
+
+
+Autowiring:
+
+To inject the object dependency implicitly
+
+1.Internally it uses setter/constructor
+2.Automatically detect the relationship between beans --> it will injecet.
+
+Types of Autowiring:
+
+1.no
+2.byName
+3.byType
+4.byConstructor
+5.autodetect
+
+spring mvc:
+
+1.Front Controller -Dispatcher servlet
+2.say the location for jsp/html pages(View)
+3.xml file for Beans -->servletname-servlet.xml
+
+Application will start from web.xml(Deployment Descriptor File)
+             -->DispatcherServlet(Front Controller)
+             -->Search for brillio-servlet.xml(add configuration)
+

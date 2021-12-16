@@ -1,0 +1,34 @@
+Style:
+
+  --> A style is a collection of attributes that specify the appearence for a View or
+      window.
+ --> A style can specify the attributes such as font color,font size,background color etc.
+   
+
+    <style name="CustomOnstyle">
+      <item name="android:layout_width">fill_parent</item>
+       <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">12pt</item>
+      </style>
+
+Theme:
+    
+    A Theme is a collection of attributes that applies on entire app,
+     activity,or view hierarchy(not just an individual view)
+
+    Themes can also apply styles to non-view elements,such as status bar
+     and window background
+
+accent color:
+
+ secondary color: should be used for floating action
+ button and interacive elements.
+
+ .Text fields and cursors
+ text selection
+progress bar
+selection controls,buttons and sliders
+links
+ 
+
+

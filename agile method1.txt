@@ -1,0 +1,68 @@
+Agile is an incremental and iterative approach to management. It enables teams working in evolving landscapes to keep their focus on the fast delivery of business value.
+
+Each principle followed in Agile project management (e.g. Kanban, XP, Scrum, and so on) are from the Agile Manifesto–a brief document that guides Agile software development. It is based on the team’s productivity, flexibility, delivery of high-quality products, and constant improvement.
+
+WHAT IS THE AGILE METHODOLOGY?
+
+
+Agile is a method that aims to complete work that truly matters. For instance, an Agile team would start working on each small portion of work rather than spending hours or days developing a detailed project plan that may or may not be suited to the project’s execution. Then, the team tracks their progress and continues the development cycle once sufficient feedback has been obtained to determine that they are following the right path.
+
+The principles of working as an Agile team are based on the Agile Manifesto. Created by software developers, it is a set of guidelines that establishes expectations on how Agile teams should operate. According to these principles, the Agile methodology prioritizes collaboration more than negotiation, proper management more than planning projects, people before tools and processes, and working software more than documentation.
+
+One of the main focus areas in the Agile method is the capacity to work in an iterative manner. Iterative work is finished in short cycles where a small part of the entire project is done at a single time.
+
+A great benefit you can get from iterative work is less work wasted. This means if there are changes in your project, the necessary re-work will be kept at a minimal level. Teams no longer have to go too far into the development cycle only to find out they need to go back to square one.
+
+Iterative work is not only applied to the project level. You can also use it to break down any amount of work into manageable little pieces which can even be visually represented.
+
+Related Content: Agile Software Development and Testing – Different Methods
+Free Cost Comparison Tool for Software Engineers
+THE AGILE PROCESS
+img1a
+
+Below are the stages in the Agile Software Development Life Cycle (SDLC) to help you find out if this process will work according to your team’s needs.
+
+1) Strategy Meeting
+A new Agile project starts by defining a clear goal or business need that your project wants to address.
+ Why are you doing what you’re planning to accomplish? Look at the big picture–this serves as the core belief you’ll keep 
+referring back to throughout the development process.
+
+2) Product Roadmap
+After validating a strategy, this step is where the product owner works to translate that vision into a product roadmap. 
+This gives your team a high-level view of project requirements with a loose time frame for when each of them will be developed.
+
+3) Release Plan
+During this step, a high-level timetable is created by the product owner to indicate the release of working software. 
+Since Agile projects are expected to have multiple releases, you will need to prioritize the functions that will get you closer to launch first.
+
+4) Sprint Planning
+Sprints are short development cycles in which certain goals and tasks will be completed. 
+Each sprint generally lasts between one to four weeks–each should stay the same length throughout the whole project.
+
+At the beginning of a sprint cycle, your team needs to list down backlog items you think you can finish within a specific timeframe 
+so you can create a functional final product.
+
+5) Daily Standup
+In every sprint, you need opportunities to ensure that no roadblocks are getting in the way of accomplishing your objectives on time. This is where the so-called “standup” or daily meeting comes into play.
+
+A standup–in Agile-speak–is a 15-minute daily meeting where your team gathers to discuss three main points:
+
+The tasks you accomplished yesterday
+The tasks you are working on today
+The roadblocks that might be getting in your way
+6) Review Sprints
+After working on each sprint, your team will check if everything has been accomplished as planned. By the end of the cycle, you should have a functioning software product that’s ready for release. At this point, you should review what was completed and show the evaluation to everyone on your team and important stakeholders. Simply put, this stage is an Agile show-and-tell where you discuss the final product.
+
+7) Sprint Retrospective
+There has to be a clear next step after every step if you want Agile project management to work.
+ This can be determined via a sprint retrospective. After completing a sprint and showing off all features, it’s now time to figure out what gets done next.
+
+WRAPPING IT UP
+Many organizations–startups in particular–are always in search of scalable ways to handle their operations. The quicker you get a scalable solution and offer it to the market, the better it is for all stakeholders. Proper resource and project management are also important if you want to succeed in your industry.
+
+Agile software development is ideal for businesses because it ensures all iterations are accomplished faster. The business can get back on track right away and resources are managed efficiently. By adopting Agile principles, companies can maintain a closely-knit team, reduce their expenses, keep up with a project schedule, and help stakeholders get greater ROI.
+
+Related Content: A Comprehensive Comparison between the Agile, Scrum, and Waterfall Methodology
+Free Cost Comparison Tool for Software Engineers
+Topics: software development projects, Agile Software Development
+

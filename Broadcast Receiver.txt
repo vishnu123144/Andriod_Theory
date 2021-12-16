@@ -1,0 +1,126 @@
+Broadcast Receiver
+===================
+*Broadcast in android is the system-wide events that can occur when the device starts,
+->when a message is received on the device,
+->when incoming calls are received,
+->when a device goes to airplane mode, etc.
+
+*Broadcast Receivers are used to respond to these system-wide events.
+  
+*Broadcast Receivers allow us to register for the system and application events, 
+ and when that event happens, then the register receivers get notified.
+
+*There are mainly two types of Broadcast Receivers:
+
+Static Broadcast Receivers(Manifest-declared):
+--------------------------
+These types of Receivers are declared in the manifest file and works even if the app is closed.
+
+Dynamic Broadcast Receivers(Context-registered): 
+---------------------------
+These types of receivers work only if the app is active or minimized.
+
+
+
+
+******************************************************************************
+Broadcast Receiver
+===================
+Broadcast receiver is an Android component which allows you to send or receive Android system or application events.
+ All the registered application are notified by the Android runtime once event happens.
+
+Basics of Broadcast
+Let’s discuss some basic concepts of broadcast receiver.
+
+Register Broadcast
+--------------------
+There are two ways to register broadcast receiver-
+
+Manifest-declared (Statically) :
+ By this receiver can be registered via the AndroidManifest.xml file.
+
+Context-registered (Dynamically) : 
+By this register a receiver dynamically via the Context.registerReceiver() method.
+
+Receive Broadcasts
+-------------------
+To be able to receive a broadcast,
+ application have to extends the BroadcastReceiver abstract class and override its onReceive() method.
+If the event for which the broadcast receiver has registered happens,
+ the onReceive() method of the receiver is called by the Android system.
+*****************************************************************************
+
+
+
+*****Since from API Level 26, 
+
+-> most of the broadcast can only be caught by the dynamic receiver,
+->There are some static fields defined in the Intent class
+   which can be used to broadcast different events.
+
+*android.intent.action.BATTERY_LOW :
+(Indicates low battery condition on the device.)
+
+*android.intent.action.BOOT_COMPLETED
+(This is broadcast once after the system has finished booting)
+
+*android.intent.action.CALL
+( To perform a call to someone specified by the data)
+
+*android.intent.action.DATE_CHANGED
+(Indicates that the date has changed)
+
+*android.intent.action.REBOOT
+(Indicates that the device has been a reboot)
+ 
+*android.net.conn.CONNECTIVITY_CHANGE
+(The mobile network or wifi connection is changed(or reset))
+
+*android.intent.ACTION_AIRPLANE_MODE_CHANGED
+(This indicates that airplane mode has been switched on or off.)
+
+
+
+The two main things that we have to do in order
+ to use the broadcast receiver in our application are:
+
+--------------------------------------------------------
+**Creating the Broadcast Receiver:
+
+class AirplaneModeChangeReceiver:BroadcastReceiver() {
+       override fun onReceive(context: Context?, intent: Intent?) {
+            // logic of the code needs to be written here
+      }
+}
+
+
+**Registering a BroadcastReceiver:
+
+IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED).also {
+
+     // receiver is the broadcast receiver that we have registered
+
+     // and it is the intent filter that we have created
+
+        registerReceiver(receiver,it)
+
+      }
+
+
+
+What is LocalBroadcastManager?
+For obvious reasons, global broadcasts must never contain sensitive information. 
+You can, however, broadcast such information locally using the LocalBroadcastManager class, 
+which is a part of the Android Support Library.
+The LocalBroadcastManager is much more efficient as it doesn’t need inter-process communication.
+
+Below are some of its benefits:
+--------------------------------
+**Broadcast data won’t leave your app,
+ so don’t need to worry about leaking private data.
+
+**It is not possible for other applications to send these broadcasts to your app,
+ so you don’t need to worry about having security holes they can exploit.
+
+**It is more efficient than sending a global broadcast through the system.
+No overhead of system-wide broadcast.

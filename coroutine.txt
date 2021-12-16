@@ -1,0 +1,86 @@
+Main Thread:
+
+when user launches an application default thread is created.
+this thread is known as default thread. 
+
+In main thread we perform small operations:
+
+Ui Interaction
+Button click
+Mathematical operations
+small logical operations
+
+if u run long operations in main thread it will be blocked.
+your application will be crashed.
+
+Long Operations:
+
+File download      -->background thread1
+network operations  -->background thread2
+Image downloading   -->background thread3
+database queries      -->background thread4
+
+worker Thread or background Thread:
+ here we can run long operations.
+
+creating so many background threads is also leads
+ to out of memory or sometimes crashes.
+
+Coroutines: 
+
+when u use coroutines we dont need to create so many background threads.
+
+                     -->Coroutine1->File upload
+  
+                
+Background thread1   -->Coroutine2->File Download
+
+                     -->Coroutine3->Database Queries
+
+-->Lightweight threads
+
+--> Like threads,coroutines can run in parallel,wait for each other
+ and communicate with each other
+
+-->Coroutines!=Thread
+
+-->Coroutines are very very cheap-almost free. create thousand of them without any memory issue.
+
+
+fun main()
+{
+println("Main program Starts: ${Thread.currentThread().name}") --main thread
+
+thread   //background thread or worker thread
+{
+println("Fake work Starts: ${Thread.currentThread().name}") -- thread 0
+Thread.sleep(1000)
+}
+println("Main program ends: ${Thread.currentThread().name}") --main thread
+}
+
+
+GlobalScope.launch  //creates a background coroutine
+{
+println("Fake work Starts: ${Thread.currentThread().name}") -- thread 0
+Thread.sleep(1000)
+}
+
+
+thread //creates thread
+{
+Thread.sleep(1000)//it will block entire thread
+}
+
+GlobalScope.launch  //opeates with in a thread
+{
+delay(1000) //it does not block entire thread
+}
+
+
+
+
+
+
+
+

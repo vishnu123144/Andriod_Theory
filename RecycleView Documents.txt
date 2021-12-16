@@ -1,0 +1,64 @@
+        RecycleView
+
+     
+  What is a RecyclerView?
+
+A RecyclerView is a flexible view for providing a limited window into a large data set. It is essentially a ViewGroup of containers called ViewHolders.RecyclerView is an extensive Android class to provide a flexible UI
+
+BENEFITS :
+----------
+ benefit of using RecyclerViews is that you’re able to efficiently reuse views instead of managing items
+
+
+Why we use RecyclerView?
+
+A)Android was using ListView or GridView classes for displaying lists. The RecyclerView can be described as a combination of a ListView and a GridView.
+
+Recycle Feature :  that separate your code into maintainable components while also enforcing memory-efficient design patterns.
+-----------------
+
+How is it better than ListViews and GridViews?
+A)ListViews and GridViews are comparatively slower than RecyclerViews.
+
+
+Layouts in RecyclerView :
+-------------------------
+RecyclerView still uses an Adapter to act as a data source. However, you have to create ViewHolders to keep references in memory.To provide a new view, RecyclerView either" creates a new ViewHolder object" to inflate the layout and hold those references, or it recycles one from the existing stack.
+
+This is it why it’s called a RecyclerView!
+
+The most important and interesting component of a RecyclerView is its LayoutManager
+
+There are three types of Layout Managers by default:
+-------------------------------------------------------
+
+LinearLayoutManager:           Positions items to look like a standard ListView.
+GridLayoutManager:             Positions items in a grid format similar to a GridView.
+StaggeredGridLayoutManager:    Positions terms in a staggered grid format.
+
+RecyclerView implementations requires:
+--------------------------------------
+A list of data objects to work with.
+An XML file of the view item.
+An adapter to bind that data to the views.
+A ViewHolder to populate the UI view from the XML item file.
+
+
+RecyclerView using GridLayoutManager :
+-------------------------------------
+recycler_view_items.layoutManager = LinearLayoutManager(this)   
+
+If U want to present GridView the list and syntax :
+----------------------------------------------------
+ recycler_view_items.layoutManager = GridLayoutManager(this, 2)
+
+
+
+
+
+
+
+
+
+
+

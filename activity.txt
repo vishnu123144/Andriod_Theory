@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    >
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="gray"
+    android:text="@string/app_name"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="@dimen/button_text_size"
+/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+/>
+
+</LinearLayout>
+
+
+-------------------------------------------------------------------------
+
+login layout
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp" >
+
+    <LinearLayout
+        android:id="@+id/usernamelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:text="Username"
+            android:textSize="@dimen/button_text_size" />
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Enter Username" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usernamelayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="Password"
+                android:textSize="@dimen/button_text_size" />
+
+            <EditText
+                android:id="@+id/ed_password1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Enter Password"
+                android:inputType="numberPassword" />
+
+
+        </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
+
+buildToolsVesrsion:"30.0.0";

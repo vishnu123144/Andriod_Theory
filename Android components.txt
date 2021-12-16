@@ -1,0 +1,58 @@
+Android components:
+
+-Activity
+-Service
+-Broadcast Receiver
+-Content Provider
+
+
+Activity:
+       A single screen in the application with ui components user will interact
+with the device through one activity.
+
+
+Service:
+  A long running background process with out any user interaction.
+  If u want to perform any operations in background we can write the
+ code in service  
+
+Ex:1. alarm service,wifi connection is available,media player.
+
+
+Broadcast Receivers:
+
+-Broadcast Receivers are registered with system announcements.
+
+headset plugin,charger connected/disconnected,screen ON/OFF.
+
+
+Content Provider:
+
+   Content provider is used to share the data between 
+         multiple applications.
+
+   In android one of the security feature is we cannot acees one
+ apllication data with another application directly but if the application is
+providing the content provider then we can acess the data.
+
+     X Application        Y application
+      
+     Contacts              watsup
+      
+      Sqlite database
+
+
+from above example we can access the contacts data in watsup 
+with the help of content provider.
+
+Ex: Contacts,Callog,media,Settings,Calender
+
+
+Manifest file:
+
+it will give complete description about your application
+
+ex:how many screens are there in your application
+
+any permission required
+              

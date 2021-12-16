@@ -1,0 +1,30 @@
+Dependency injection:
+
+providing services to clients from "outside".
+
+Three ways to "Inject" services from outside
+
+Constructor injection
+
+method injection
+
+field injection (property in kotlin)
+
+constructor injection
+class client (private val service1: Service1)
+{
+private var service2 : Service2?=null
+
+lateinit var service3: Service3 //field injection
+
+fun setService2(service2: Service2) //method injection
+{
+this.service2=service2
+}
+} 
+
+
+Dagger:
+
+Dagger is generally considered the most complex dependency
+ injection framework in android.

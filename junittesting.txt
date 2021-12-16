@@ -1,0 +1,52 @@
+Testing:
+
+ Three types of testing in android:
+
+                           Tests
+
+       Unit              Instrumentation       UI
+      
+     JUNIT               JUNIT               Expresso
+     Mockito             Mockito
+
+UNIT:
+
+local unit tests are running in your local machine.
+java virtula machine
+logic based testing
+junit5,mockito
+
+Instrumentation:
+
+similar to local unit test cases.
+need a real device or emulator
+junit4,mockito
+
+UI:
+
+simulate a person using your app
+clicking a button
+literally uses widgets
+real device or emulator
+
+
+androidtest (instrumentation & ui)-->Mockito,Junit,Expresso
+
+test (Unit) -->Mockito,Junit
+
+
+Local tests: 
+
+Unit tests that run on your local machine only. 
+These tests are compiled to run locally on the Java Virtual Machine (JVM) to minimize execution time.
+If your tests depend on objects in the Android framework, we recommend using Robolectric. 
+For tests that depend on your own dependencies, use mock objects to emulate your dependencies' behavior.
+
+Instrumented tests:
+
+ Unit tests that run on an Android device or emulator. 
+These tests have access to instrumentation information, such as the Context for the app under test. 
+Use this approach to run unit tests that have complex Android dependencies that require a more robust environment, such as Robolectric.
+
+
+

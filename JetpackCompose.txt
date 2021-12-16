@@ -1,0 +1,83 @@
+Jetpack Compose: is a modern tool kit which is used to simplify your ui
+  It is also suppors mvvm
+
+XML->  @Composable functions  ->resusable functions
+
+
+program:
+
+@Composable 
+fun MyfistProg(name:String){
+Text(text="Hello$name")
+}
+
+Row: will align the text horizontally
+Column: will align the text vertically
+
+@Composable 
+fun MyfistProg(name:String){
+Column{                  //overalapping will not happen
+Text(text="Hello$name")
+Text(text="Hi$name") 
+}    
+}
+
+Initial Composition:  when a jetpack compose runs your application
+ first time during the initial composition it will keep track of
+composable that will describe your ui in a composition the state 
+of your app changes recomposition will happens.
+
+Recomposition:  jetpack compose reexecutes that may change in a response
+and update in ui
+
+
+In a traditional view system if u want to change the internal state of text
+<TextView 
+   android:id="@+id/textView"/>
+binding.textView.text="New text"
+
+
+Lifecycle of Composables:
+
+   Enter the                  Recompose 0 or    -->Leave the 
+    composition    -->          More times            Composition
+
+
+example for recomposition:
+@Composable 
+fun MyfistProg(){ 
+var myValue by remember{mutableStateOf(false)}
+
+Button(onClick={myValue=!myValue})
+  {                
+Text(text="$myValue") //text value will be changed when ever we clock on button
+}
+
+@Composable 
+@Preview //to see our ui
+fun MyfistProg(name:String){
+Text(text="Hello$name")
+}
+
+
+
+
+Composable functions can execute in any order
+  @Composable
+  fun MyComposable()
+  {
+   MyNavigation{
+    StartScreen()
+    MiddleScreen()
+    EndScreen()
+}
+}
+
+State:
+  
+  State is any value that can be changed
+
+ updating the ui with the help of state
+
+Event:
+  Notify a part of program that something specified

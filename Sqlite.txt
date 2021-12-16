@@ -1,0 +1,39 @@
+Activity:
+       A single screen in the application with ui components user will interact
+with the device through one activity.
+
+
+Service:
+  A long running background process with out any user interaction.
+  If u want to perform any operations in background we can write the
+ code in service  
+
+Ex:1. alarm service,wifi connection is available,media player.
+
+
+Sqlite/Room:-
+
+SQLite is an open-source relational database. 
+
+i.e. used to perform database operations on android devices such as storing, manipulating or retrieving persistent data from the database.
+
+It is embedded in android bydefault. So, there is no need to perform any database setup or administration task.
+
+
+SQLiteOpenHelper class provides the functionality to use the SQLite database.
+
+
+SQLiteOpenHelper:- 
+
+	It has predefine methods they are:-
+	1)onCreate:- It is called when database created first time.
+	2)onUpgrade:- It is called when database needs to be upgraded.
+	3)close:- closes the database object.
+	4)onDowngrade:- It is called when database needs to be downgraded.
+
+For performing any database operation, you have to provide the implementation of onCreate() and onUpgrade() methods of SQLiteOpenHelper class.
+
+SQLite Database class:-
+
+It contains methods to be performed on sqlite database such as create, update, delete, select etc.
+
